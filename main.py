@@ -25,7 +25,6 @@ class ScrapyWorker(QThread):
 
     def run(self):
         runner = CrawlerRunner()
-
         @inlineCallbacks
         def crawl():
             for url in self.urls:
